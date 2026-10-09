@@ -1,69 +1,141 @@
-# Market Hub
+# 🏪 Market Hub
 
-Market Hub is local-marketplace app. The existing React/Vite + Express/SQLite architecture is preserved; the implementation now adds real authentication, role checks, dynamic business hours, inventory freshness, reviews, saves, notifications, business management, moderation, and demand analytics.
+### Discover Local Shops. Find Products. Support Local Businesses.
 
-## Run locally
+Market Hub is a local marketplace prototype designed to connect customers with nearby shops, products, and services. It aims to make local shopping easier by helping people discover what they need and find businesses in their area.
 
-### Backend
+Built as a prototype for demonstration and evaluation, Market Hub explores how technology can help local businesses improve their visibility and connect with more customers.
+
+---
+
+## 💡 The Problem
+
+Local shops are an important part of everyday life, but customers often struggle to:
+
+* Find nearby shops that sell a specific product.
+* Discover local services without searching across multiple platforms.
+* Compare available products and displayed prices.
+* Know which shops are nearby and which businesses offer the services they need.
+
+At the same time, many small businesses have limited digital visibility and may find it difficult to reach new customers online.
+
+## 🚀 The Solution
+
+Market Hub provides a unified platform for discovering local shops, products, and services.
+
+Instead of searching for shops one by one, users can explore business listings, search for products, and find relevant shops in one place.
+
+The goal is to bridge the gap between local customers and neighborhood businesses through a simple, accessible digital experience.
+
+## ✨ Key Features
+
+* **Shop Discovery:** Explore local shops and business listings.
+* **Product Search:** Search for products and discover shops that list them.
+* **Business Categories:** Browse businesses by categories such as grocery, books, salons, bakeries, mobile shops, hardware, tailoring, and services.
+* **Location-Based Discovery:** Explore nearby shops through the map and location-related features supported by the prototype.
+* **Business Information:** View available shop details and product information.
+* **Business Owner Features:** Explore the shop-management capabilities provided by the prototype.
+* **Customer Experience:** A user-friendly interface designed to make local shopping discovery simple and convenient.
+
+*Feature availability may depend on the current prototype configuration and data.*
+
+## 🎯 Project Objectives
+
+1. Improve the digital visibility of local businesses.
+2. Make product and shop discovery easier for customers.
+3. Encourage people to discover and support neighborhood businesses.
+4. Explore the potential of a digital marketplace tailored to local communities.
+5. Build a foundation that can be extended with additional marketplace capabilities.
+
+## 🛠️ Technology Stack
+
+The exact technologies and versions used in this project are documented in the source code and dependency files.
+
+* **Frontend:** See the project's frontend configuration.
+* **Backend:** See the server implementation, if included.
+* **Package Management:** Node.js and npm, if applicable.
+* **Version Control:** Git and GitHub.
+
+## 💻 Getting Started
+
+### Prerequisites
+
+Install the software required by your project:
+
+* Git
+* Node.js and npm, if the project uses Node.js
+* Any additional services or configuration required by the application
+
+### Installation
+
+Clone the repository:
+
 ```bash
-cd backend
-npm install
-npm start
+git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-### Frontend
+Navigate to the project directory:
+
 ```bash
-cd frontend
-npm install
+cd YOUR_PROJECT_FOLDER
+```
+
+Install dependencies if the project uses npm and includes a `package-lock.json`:
+
+```bash
+npm ci
+```
+
+Start the application using the appropriate command defined in the project's `package.json`.
+
+For example, if a development script is configured:
+
+```bash
 npm run dev
 ```
 
-The frontend expects the backend at `http://localhost:5000/api`. Override it with `VITE_API_BASE` if needed.
+**Note:** If the project has separate frontend and backend applications, follow the corresponding setup instructions for each component. Configure required environment variables using placeholder values from `.env.example`, if provided. Never publish passwords or API secrets.
 
-## Demo accounts
+## 📸 Screenshots
 
-- Customer: `demo@gramsetu.app` / `Demo@12345`
-- Business owner: `business@gramsetu.app` / `Business@12345`
-- Admin: `admin@gramsetu.app` / `Admin@12345`
+Screenshots of the application can be added here to demonstrate the user interface and core functionality.
 
-The demo emails intentionally retain the original demo credentials while the product branding is now Market Hub.
+Suggested screenshots:
 
-## Main changes
+* Home page and shop categories
+* Product search and shop listings
+* Nearby-shop discovery
+* Business owner dashboard
+* Product or shop details
 
-- Market Hub branding and responsive desktop/mobile layout
-- Customer, business-owner and admin roles with backend authorization
-- Working demo login and session tokens
-- Product/service search, category filters and product-name matching
-- Dynamic weekly opening hours with closed days, closing-soon and overnight support
-- Business hours editor
-- Inventory status updates with freshness timestamps and stale-data warnings
-- Fixed, starting, range/from and price-on-request display types
-- Saved businesses/products
-- Reviews, review responses and reports
-- Notification center
-- Business profile editing and inventory management
-- Business claims and admin approval workflow
-- Admin moderation overview, claims and reports
-- Aggregated demand insights with a minimum privacy threshold
-- Light/dark/system theme persistence
-- English/Hindi-ready UI structure
-- Loading, empty and error states
-- Home-service business fields
-- Profile completeness tracking
+## 🔮 Future Scope
 
-## Note about the supplied archive
+Potential future improvements include:
 
-The original archive included Windows-native `node_modules` binaries. They should not be relied on across operating systems. The source and lockfiles are the important project artifacts; run `npm install`/`npm ci` on the target machine so Vite/Rollup/sqlite3 install the correct native binaries for that OS.
+* More advanced location-based search and filtering.
+* Improved shop-owner onboarding and business verification.
+* More comprehensive product and inventory management.
+* Customer enquiries and direct shop communication.
+* Enhanced mobile experience.
+* Production deployment, stronger security, and performance improvements.
+* Optional ordering and payment capabilities.
 
-## Location & Google Maps
+These are potential extensions and are not necessarily part of the current prototype.
 
-Market Hub supports customer location using the browser Geolocation API and map-selected locations. The backend accepts `lat` and `lng` on `/api/businesses` and recalculates business distance from the customer location when coordinates are available.
+## 🎓 Project Status
 
-To enable the live Google Map:
+**Status:** Prototype / Demonstration Project
 
-1. Copy `frontend/.env.example` to `frontend/.env`.
-2. Set `VITE_GOOGLE_MAPS_API_KEY` to your Google Maps JavaScript API key.
-3. In Google Cloud, enable **Maps JavaScript API** for that key and configure appropriate website/API-key restrictions.
-4. Restart the Vite dev server after changing `.env`.
+Market Hub is being developed to demonstrate a practical approach to local shop and product discovery. The current implementation serves as a foundation for further testing, feedback, and development.
 
-The map shows the customer location, nearby business markers, and (for Home Services) a coverage circle for each provider based on `max_service_radius`. Customers can click the map to pin a different location or use their current browser location.
+## 🤝 Feedback and Contributions
+
+Suggestions, feedback, and ideas for improving local business discovery are welcome.
+
+## 📄 License
+
+A license has not yet been specified. Usage, modification, and redistribution permissions should be defined before the project is shared for reuse.
+
+---
+
+**Market Hub — Bringing Local Shops Closer to Their Customers.**
