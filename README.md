@@ -1,6 +1,6 @@
 # Market Hub
 
-Market Hub is the renamed and expanded version of the existing GramSetu local-marketplace app. The existing React/Vite + Express/SQLite architecture is preserved; the implementation now adds real authentication, role checks, dynamic business hours, inventory freshness, reviews, saves, notifications, business management, moderation, and demand analytics.
+Market Hub is local-marketplace app. The existing React/Vite + Express/SQLite architecture is preserved; the implementation now adds real authentication, role checks, dynamic business hours, inventory freshness, reviews, saves, notifications, business management, moderation, and demand analytics.
 
 ## Run locally
 
