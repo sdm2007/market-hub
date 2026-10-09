@@ -56,51 +56,9 @@ The exact technologies and versions used in this project are documented in the s
 * **Package Management:** Node.js and npm, if applicable.
 * **Version Control:** Git and GitHub.
 
-## 💻 Getting Started
-
-### Prerequisites
-
-Install the software required by your project:
-
-* Git
-* Node.js and npm, if the project uses Node.js
-* Any additional services or configuration required by the application
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-Navigate to the project directory:
-
-```bash
-cd YOUR_PROJECT_FOLDER
-```
-
-Install dependencies if the project uses npm and includes a `package-lock.json`:
-
-```bash
-npm ci
-```
-
-Start the application using the appropriate command defined in the project's `package.json`.
-
-For example, if a development script is configured:
-
-```bash
-npm run dev
-```
-
-**Note:** If the project has separate frontend and backend applications, follow the corresponding setup instructions for each component. Configure required environment variables using placeholder values from `.env.example`, if provided. Never publish passwords or API secrets.
-
 ## 📸 Screenshots
 
 Screenshots of the application can be added here to demonstrate the user interface and core functionality.
-
-Suggested screenshots:
 
 * Home page and shop categories
 * Product search and shop listings
